@@ -11,7 +11,7 @@ const secondSpan = document.querySelector('[data-seconds]');
 
 btnStart.disabled = true; 
 let timer = null;
-selectedDates = null
+const selectedDates = null
 
 const options = {
   enableTime: true,
@@ -19,7 +19,7 @@ const options = {
   defaultDate: new Date(),
   minuteIncrement: 1,
   onClose(selectedDates) {
-    // console.log(selectedDates[0]);
+  // console.log(selectedDates[0]);
 
     if (selectedDates[0] <= new Date()) {
       Notiflix.Notify.failure('Please choose a date in the future');
